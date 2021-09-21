@@ -1,5 +1,5 @@
 # 2D Ray Casting
-![2D Ray Casting Logo](images/logo.jpg)
+![2D Ray Casting Logo](images/logo.JPG)
 
 2D Ray Casting is a ray visualizer built in python using the pygame library that allows users to move a light source around and cast the appropriate rays onto walls. It was inspired by a video discussing the fundamentals of drawing and casting rays in Javascript (https://www.youtube.com/watch?v=TOEi6T2mtHo). The formula used to check for ray-Wall collisions can be found in the line segment portion of https://en.wikipedia.org/wiki/Line%E2%80%93line_intersection.
 

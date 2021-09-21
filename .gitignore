@@ -1,0 +1,3 @@
+# files for git to ignore
+__pycache__/*
+2draycasting_env/*

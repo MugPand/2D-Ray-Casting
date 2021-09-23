@@ -36,7 +36,7 @@ walls.append(Wall(width - 1, 0, width - 1, height - 1)) # right Wall
 w = Wall(500, 50, 500, 500)
 # walls.append(w) * uncomment this line to activate test wall*
 
-# initialize random walls (currently randomizes between 0 and 10 walls, but can be modified as needed)
+# initialize random non-border walls (currently randomizes between 0 and 10 walls, but can be modified as needed)
 for i in range(random.randint(0, 10)):
     walls.append(Wall(random.randint(0, width), random.randint(0,height), random.randint(0, width), random.randint(0,height)))
 
@@ -52,6 +52,14 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:   
             running = False
+        elif event.type == pygame.KEYDOWN:
+            # regenerates new walls
+            if event.key == K_r:
+                # clear non-border walls
+                del walls[4:len(walls)]
+                # regenerate new non-border walls
+                for i in range(random.randint(0, 10)):
+                    walls.append(Wall(random.randint(0, width), random.randint(0,height), random.randint(0, width), random.randint(0,height)))
 
     # set x & y position of light to the current mouse position
     l.x1, l.y1 = pygame.mouse.get_pos()

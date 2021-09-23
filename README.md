@@ -18,11 +18,10 @@ The application places a light source, comprised of NUM_RAYS (initially set to 3
 
 The light sources tracks the movement of the mouse and adjusts its rays and collisions accordingly.
 
-
-Restarting the application generates a new list of Walls, allowing each run to cast rays onto various wall objects.
+Restarting the application or pressing <kbd>R</kbd> generates a new list of Walls, allowing each run to cast rays onto various wall objects.
 
 ![2D Ray Casting Screenshow2](images/screenshot2.png)
 
 ## Future Iterations
-- Add keyboard controls to generate new walls. 
+- ~~Add keyboard controls to generate new walls.~~
 - So far, the Wall, Light, and Ray objects have been created, although more can be added in the future i.e. Mirrors/Transparent surfaces.
